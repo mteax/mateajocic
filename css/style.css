@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+body {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+    font-weight: 400;
+    color: #777;
+}
+
+.container { 
+    max-width: 1140px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+h1, h2, h3{
+    margin: 0; 
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Playfair Display", serif; 
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 48px; 
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 40px;
+    color: #f69314;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 22.4px; 
+    font-weight: 300;
+}
+
+p {
+    margin: 0 0 16px; 
+}
+
+button.rounded {
+    background: #f69314; 
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px; 
+    padding: 10px 30px;
+    cursor: pointer; 
+}
+
+p.veliki-paragraf {
+    font-size: 20px; 
+    font-weight: 300;
+}
+  
+#pocetna-zaglavlje {
+    min-height: 600px;
+    height: 100vh;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 27px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    top: 4px;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #999;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header ul.is-sticky li a {
+    color: #000;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #fff;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a.active {
+    color: #f69314;
+}
+#pocetna {
+    background: url('../images/background.jpg') center no-repeat;
+    background-size: cover;
+	z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#pocetna .pocetna-unutra {
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 58, 64, 0.9);
+    z-index: 1;
+}
+
+#pocetna .pocetna-text {
+    position: absolute;
+    top: 50%;
+    margin:  -75px auto 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff;
+    width: 700px;
+    text-align: center;
+}
+
+#pocetna .pocetna-text p {
+    line-height: 24px;
+    font-weight: 300;
+    font-size: 16px;
+}
+#usluge {
+    margin: 64px 0 128px;
+}
+
+#usluge h2 {
+    margin-bottom: 48px;
+}
+
+#usluge .container {
+    position: relative;
+}
+
+#usluge .container:before {
+    content: "/";
+    position: absolute;
+    right: 80px;
+    top: 18px;
+    color: #999;
+}
+
+#usluge-slider a.slick-arrow {
+    color: #000;
+    position: absolute;
+    top: -78px;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+
+#usluge-slider a.slick-prev {
+    right: 80px;
+}
+
+#usluge-slider .slick-slide {
+    padding: 0 15px;
+}
+
+#usluge-slider img {
+    width: 100%;
+    display: block;
+}
+
+#usluge-slider .detalji-slike{
+    padding: 16px;
+}
+
+#usluge-slider .cena {
+    font-size: 19px;
+    color: #343a40;
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+#usluge-slider .detalji-slike {
+    font-size: 13px;
+    font-style: normal;
+    margin-top: 8px;
+}
+
+#usluge button.rounded {
+    display: block;
+    margin: 32px auto 0;
+    width: 350px;
+}
+#galerija {
+    margin: 64px 0 96px;
+    padding: 0 0 96px;
+    border-bottom: 1px solid #ccc;
+}
+
+#galerija p.veliki-paragraf {
+    width: 50%;
+    margin-bottom: 64px;
+}
+
+#galerija .flex {
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#galerija .slika {
+    width: 32%;
+    background: #f0f0f0;
+    margin-bottom: 32px;
+}
+
+#galerija .slika img {
+    width: 100%;
+}
+
+#o-nama {
+    margin: 32px 0;
+}
+
+#o-nama .flex > img {
+    width: 47%;
+}
+
+#o-nama .flex > div {
+    width: 40%;
+}
+
+#o-nama ul {
+    padding-left: 20px;
+    margin-bottom: 64px;
+}
+
+#o-nama ul li {
+    margin: 10px 0;
+}
+#o-autoru {
+    margin-bottom: 128px;
+}
+
+#o-autoru h2 {
+    text-align: center;
+}
+
+#o-autoru-tekst-slika  {
+    text-align: center;
+}
+
+#o-autoru-tekst-slika blockquote {
+    font-size: 24px;
+    font-style: italic;
+    margin: 16px auto 48px;
+    max-width: 740px;
+}
+
+#o-autoru-tekst-slika .o-autoru-slika {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#o-autoru-tekst-slika .o-autoru-slika img {
+    float: left;
+    border-radius: 30px;
+    width: 60px;
+}
+
+.o-autoru-slika p {
+    position: relative;
+    top: 13px;
+    font-size: 19.5px;
+}
+
+#kontakt {
+    background: #f8f9fa;
+    padding: 64px 0 128px;
+}
+
+#kontakt h2 {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+#kontakt-forma{
+    width: 58%;
+    background: #fff;
+    padding: 48px;
+    box-sizing: border-box;
+}
+
+#kontakt-forma h3 {
+    color: #000;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 32px;
+}
+
+#kontakt-forma label {
+    display: block;
+    color: #000;
+    margin-top: 16px;
+}
+
+#kontakt-forma input,
+#kontakt-forma textarea {
+    display: block;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    box-sizing: border-box;
+    height: 43px;
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 16px;
+    color: #495057;
+}
+
+#kontakt-forma  textarea {
+    height: 170px;
+    margin-bottom: 32px;
+    resize: none;
+}
+
+#adresa-kontakt {
+    width: 38%;
+    background: #fff;
+    padding: 24px;
+    box-sizing: border-box;
+    height: 300px;
+}
+
+#adresa-kontakt  label {
+    font-weight: 700;
+    display: block;
+    margin-top: 32px;
+}
+
+#adresa-kontakt  label:first-child {
+    margin-top: 0;
+}
+
+#adresa-kontakt  address {
+    margin-bottom: 24px;
+    font-style: normal;
+}
+
+#adresa-kontakt  a {
+    text-decoration: none;
+    color: #f69314;
+}
+
+#adresa-kontakt  a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #333;
+    padding: 128px 0;
+}
+footer small {
+    margin-top: 48px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+a{
+	text-decoration:none;
+}
+
+/* CSS ZA SLIDER */
+
+/* CSS uz JavaScript slider uz pomoc koriscenja stackoverflow */
+.slick-slider{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track:after{
+    clear: both;
+}
+
+.slick-slide{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+.slick-initialized .slick-slide{
+    display: block;
+}
